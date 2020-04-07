@@ -1,0 +1,167 @@
+<%- include("partials/header") %>
+<% var pokemons = team.pokemons; teamId = team.teamId; url = team.url; tags = team.tags; %> 
+<div id="divBackgroundImage"></div>
+<section class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-12">
+        <h1>
+          Today's team
+          <span><img class="icon" src="../imgs/pokeball.png"/></span>
+        </h1>
+
+        <% if(url != null){ %>
+          <a href="<%= url %>" >
+            <h1 class="display-3 mt-4"><%= teamId %> </h1>
+          </a>
+        <% } %>
+        <% if(url == null){ %>
+          
+            <h1 class="display-3 mt-4" style="color: #0275d8;"><%= teamId %> </h1>
+          
+        <% } %> 
+        
+        
+        
+          
+            <div class="mt-3 d-inline-block">
+              <% tags.forEach(function(tag){ %> 
+              <div class="tag px-3 py-2 mr-2 mb-2"># <%= tag %></div>
+              
+              <% }) %> 
+            </div>
+            
+          
+        
+        
+        <div class="d-block">
+          <button id="newTeam" type="button" class="btn btn-primary mt-5 px-5 py-3 float-none">
+            New Team
+          </button>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-12 mt-lg-5 mt-md-0">
+        <div class="row">
+        <% pokemons.forEach(function(pokemon){ %> 
+        <% var pkmUrl = "https://img.pokemondb.net/sprites/sword-shield/normal/" + pokemon.name.toLowerCase() + ".png"; %> 
+
+          <div class="col-4">
+            <img
+              src="<%= pkmUrl %> "
+              alt="<%= pokemon.name.toLowerCase() %> "
+            />
+          </div>
+        <% }) %> 
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="info mt-5">
+  <div class="container">
+    <div class="row">
+      
+    <% pokemons.forEach(function(pokemon){ %> 
+    <% var pkmUrl = "https://img.pokemondb.net/sprites/sword-shield/normal/" + pokemon.name.toLowerCase() + ".png"; %> <% function getTypeUrl(type){ return "/imgs/types/GO_" + type + ".png";} %> 
+    <% function trims(str) { return str.replace(/[ ]/g,""); } %> 
+    <% var imageUrl = "https://www.serebii.net/itemdex/sprites/" + trims(pokemon.item.toLowerCase()) + ".png";%>
+    <div class="col-lg-6 col-md-12 mb-3 mt-5">
+    
+      <div class="card ">
+        <div class="row no-gutters">
+          <div class="col-md-4 card-left">
+            <img
+              src="<%= pkmUrl %> "
+              class="card-img"
+              alt="<%= pokemon.name.toLowerCase() %> "
+            />
+            <img src="<%= imageUrl %> " class="item mb-lg-3 mb-md-2" />
+
+            <p>Ability: <%= pokemon.ability %><br><br>
+            Item: <%= pokemon.item %></Item:>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mt-4">
+              <h5 class="card-title">
+                <%= pokemon.name %>
+                <span>
+                  <% if(pokemon.sex === "Female"){ %>
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/plasticine/100/000000/female.png"
+                  />
+                  <% } else if(pokemon.sex === "Male"){ %>
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/plasticine/100/000000/male.png"
+                  />
+                  <% } else {  %> 
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/material-sharp/96/000000/select-none.png"
+                  />
+                  <% } %>
+                  
+                </span>
+                Lv: <%= pokemon.lv %>
+              </h5>
+              <p class="card-text text-muted mt-4">
+                <div class="attribute d-inline"
+                  ><img
+                    class="icon"
+                    src="<%= getTypeUrl(pokemon.type1) %> "
+                  /><%= pokemon.type1.toUpperCase() %>
+              </div>
+                <% if(pokemon.type2 !== "None") {%>
+                <div class="attribute d-inline"
+                  ><img
+                    class="icon"
+                    src="<%= getTypeUrl(pokemon.type2) %>"
+                  /><%= pokemon.type2.toUpperCase() %></div
+                >
+                <%}%>
+              </p>
+              <ul class="mt-lg-5 mt-md-5">
+                <li>
+                  <img
+                    class="icon-sm"
+                    src="<%= getTypeUrl(pokemon.skills[0].type) %> "
+                  />
+                  <%= pokemon.skills[0].name %>
+                </li>
+                <li>
+                  <img
+                    class="icon-sm"
+                    src="<%= getTypeUrl(pokemon.skills[1].type) %>"
+                  />
+                  <%= pokemon.skills[1].name %>
+                </li>
+                <li>
+                  <img
+                    class="icon-sm"
+                    src="<%= getTypeUrl(pokemon.skills[2].type) %>"
+                  />
+                  <%= pokemon.skills[2].name %>
+                </li>
+                <li>
+                  <img
+                    class="icon-sm"
+                    src="<%= getTypeUrl(pokemon.skills[3].type) %>"
+                  />
+                  <%= pokemon.skills[3].name %>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <% }) %>
+  
+  </div>
+  </div>
+</section>
+<%- include("partials/footer") %>

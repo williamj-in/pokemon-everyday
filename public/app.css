@@ -1,0 +1,141 @@
+body {
+  background-color: #f4f4f7;
+}
+
+.header {
+  padding-top: 15%;
+}
+
+.display-3 {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  background-color: #ccc;
+  padding: 1rem 0rem 1rem 1rem;
+  border-left: 0.5rem solid #0275d8;
+  border-radius: 0 1rem 1rem 0;
+  font-size: 4rem;
+}
+
+.display-3:hover {
+  background-color: #bbb;
+}
+
+.display-3:active {
+  background-color: #aaa;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.tag {
+  background-color: #666;
+  border: 5px solid #666;
+  color: white;
+  border-radius: 2rem;
+  font-weight: 400;
+  float: left;
+  /* cursor: pointer; */
+}
+
+.half {
+  width: 50%;
+  float: left;
+}
+
+#divBackgroundImage {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.1;
+  background-image: url(/imgs/background_image/8.jpg);
+}
+
+.icon {
+  height: 2rem;
+  /* border: 1px solid red; */
+  margin-bottom: 0.25rem;
+}
+
+.icon-sm {
+  height: 1.5rem;
+  margin-bottom: 0.3rem;
+  margin-right: 1rem;
+}
+
+.info-card {
+  background-color: white;
+}
+
+/* .psycho {
+    color: purple;
+}
+
+.fairy {
+    color: pink;
+} */
+p {
+  line-height: 1;
+}
+
+.attribute {
+  background-color: #eee;
+  padding: 1rem 1rem;
+  align-items: center;
+  border-radius: 3rem;
+  margin-right: 0.5rem;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #666;
+}
+
+.attribute img {
+  margin-right: 0.5rem;
+}
+
+.card-title {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  line-height: 2rem;
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1200px;
+  }
+}
+
+.card {
+  border-left: 0.5rem solid #0275d8;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  float: left;
+}
+
+.card-left {
+  text-align: center;
+  background-color: #eee;
+}
+
+.item {
+  width: 30%;
+  margin-top: 1rem;
+}

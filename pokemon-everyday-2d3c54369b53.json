@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pokemon-everyday",
+  "private_key_id": "2d3c54369b53b2497fd21bc8e10edebfb5ccbe08",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCd4vC6kZv0GtN3\nbvH/TY8r/9kCQEfwa5xvBMbB+zQgIcfgx9DSepONP0Yt4QNj1ioZGAqVM111ra3q\nBA7+9Xo4CGoSEoKux6ds/DaCjYEDSq1lDBasN271P6duo5geGps8NfC03D07RvAy\niQEWgKCm0ErgozReaHDd2J25Bb/v2/H0uqaznUZz9qwjSGAfkyzi99T9aRmhNx9H\nrGDuvSL8azWgz9zyN1Xk+Xp9QpzgScq+XMKCaCqw12KCIUFTERt731t+oRRyErdE\nHmCAaucuWZg7ByAqJvgQgMgCRgJt7TmICKGUWa2+XnHXCBFsD4GjJWJQkgiBkYZP\nOcXurYq/AgMBAAECggEALoedDj6vSUdGnuIRa339/aeO2rz69n2gQo+Ty8MuX3HV\nKAd7ISyCo5PMKOUxTJDnIzIUnFfg6TdgE6FSkgziEfVY3S6bWMr6KoJBxkPRi5jM\ndQUVAXfsuVYjD9YilGye5yW2ZHarjPag/yOlMG6D6eVky8MNQe1hpd+ay9ZH9HXU\n3JuLvADHO0cJjMrxCZkHEMHEoNDifbQor5Y0Dip3SEWSnWbIdVsVTbdcdbLT8OVO\nqYvCrBsTfB10Gl2v0s7iX2ajvL9KDYpY7wrNI9chsQ8vJ4Y5gg0PgcZPmtmtTR7G\nI3IIXk29bC+nFa3ZmFgLbmDN+Co5PmhS7nwpmYgo4QKBgQDLgvZE2gd9JBe0iz1s\nNwmcOatOtGEXyxvfuWh1I3FKWfkCVYHEXPzi+utAfYbwLgI7ek42FH4qp6cZuFNe\nEtXQ4Jwj+FEH/kkwli/BMtCWDQX/Ewcgnk/G1wr6ZjOFYi5KK3CL+yfPiZOEg2I6\nM+qgDRExqgXTQCzWvxFus9adKQKBgQDGm4pSiJetvdq293Fwmc3RUf4r2ruQShNs\nQPPXYIla5C2Ay1pRk3VRNdz/G5qRvXn1qOtDBucCkKN21liOH4KBlTtGiXruFpNI\nJvNP33QEaOqeZUwy3VKSgJ0Li+Jzn+DuAb6a1FyvIHIhc+x4lCLRAylQNdPlnP0R\n4BGKqXB9pwKBgF4NmGMZoHxlQc9eynRIu1hIDrPBCV5FsAwlU/FO//ysuDgr7F0j\n3HvKGw8i9Enr+XwjeiHkNqrf8IoideT0L3zpUUAOcuSO0KRzxH41TdELE8pesNyS\nTaxHlftDYGw0g9AjY1BOMofnvRVw4uSjObveTiP1v9txvUdB5nyTAIyBAoGBAMUm\nYYjMTsUJUbOOre04wDapTcX6u3XgEqfDUkraaX7wQrs3IdEYr7yN23Lh0+4YSJiz\ntdYzY94H9jxhSkbKwKIhoVXD42O0xT86aw0+o8w82amipKFZUj5brYlossJUUtPw\np2TKqbauXp0WlgacBnO0z63vwQiNbinwY3lh+WjBAoGAV8w4rq0oo6lT2jdyaujU\nJo1nl/sUl3FXL54koXXj2K2ShNipV51KRm5NKO0zN5Nth/kzfzksKviY1EH3u+gN\nJrQcGay6b5e0DFNSRZrsN8oFH7c7wMy6cDeUqpakSnlQNVf8DPqLCvEuFZSiL2h2\nlDC+fWpL9C9VYZGeFvTvTGw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "host-475@pokemon-everyday.iam.gserviceaccount.com",
+  "client_id": "110272720634437103006",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/host-475%40pokemon-everyday.iam.gserviceaccount.com"
+}
